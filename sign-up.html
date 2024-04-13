@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+   >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form>
+      <h1 class="login-title">Join Now!</h1>
+      <label for="username">ID</label>
+      <input id="username" name="username" placeholder="ex.Sungshine">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password">
+      <label for="password-repeat">Password Check</label>
+      <input id="password-repeat" name="password-repeat" type="password">
+      <label for="email">Email</label>
+      <input id="email" name="email">
+      <label>Sex</label>
+      <label>
+        <input name="sex" value="male" type = 'radio'>
+        Male
+      </label>
+      <label>
+        <input name="sex" value="female" type = 'radio'>
+        Female
+      </label>
+      <label>
+        <input name="sex" value="none" type = 'radio'>
+        Don't want to check
+      </label>
+      <label for="birthdate">DOB</label>
+      <input id="birthdate" name="birthdate" type = 'date'>
+      <label for="interest">Hobby</label>
+      <label>
+        <input name="interest" value="programming" type = 'checkbox'>
+        Programming
+      </label>
+      <label>
+        <input name="interest" value="sport" type = 'checkbox'>
+        Sports
+      </label>
+      <label>
+        <input name="interest" value="film" type = 'checkbox'>
+        Movies
+      </label>
+      <label>
+        <input name="interest" value="economy" type = 'checkbox'>
+        Finance
+      </label>
+      <label for="profession">Occupation</label>
+      <select id = 'profession' name = 'job'>
+        <option value = 'student'>Student</option>
+        <option value = 'company'>Company</option>
+        <option value = 'business'>Business</option>
+        <option value = 'teacher'>Teacher</option>
+        <option value = 'athelete'>Athelete</option>
+        <option value = 'musician'>Musician</option>
+        <option value = 'painter'>Painter</option>
+      </select>
+      <label for="duration">Programming Experience(year)</label>
+      <input name="duration" min="0">
+      <label for="profile">Profile Picture(png only)</label>
+      <input id="profile" name="profile" type = 'file' accept = '.png'>
+      <label for="introduce">Introduction</label>
+      <textarea id="introduce" name="introduce"></textarea>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
